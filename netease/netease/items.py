@@ -11,9 +11,8 @@ import scrapy
 class NeteaseItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-	title = scrapy.Field()
-	linkmd5id = scrapy.Field()
-	link = scrapy.Field()
-	desc = scrapy.Field()
-	linkUrl = scrapy.Field()
+	newsTitle = scrapy.Field()
+	newsTime = scrapy.Field()
+	newsContent = scrapy.Field()
+	newsSourceUrl = scrapy.Field()
 	picUrl = scrapy.Field()

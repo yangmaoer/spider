@@ -13,11 +13,11 @@ BOT_NAME = 'netease'
 
 SPIDER_MODULES = ['netease.spiders']
 NEWSPIDER_MODULE = 'netease.spiders'
-LOG_LEVEL = 'INFO'
-MYSQL_HOST = "localhost"
-MYSQL_DBNAME = 'cnblogsdb'
-MYSQL_USER = "root"
-MYSQL_PASSWD = "060901"
+# LOG_LEVEL = 'INFO'
+# MYSQL_HOST = "localhost"
+# MYSQL_DBNAME = 'spider_web'
+# MYSQL_USER = "root"
+# MYSQL_PASSWD = "060901"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'netease (+http://www.yourdomain.com)'
@@ -28,7 +28,7 @@ MYSQL_PASSWD = "060901"
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY=3
+# DOWNLOAD_DELAY=3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN=16
 #CONCURRENT_REQUESTS_PER_IP=16
@@ -65,10 +65,10 @@ COOKIES_ENABLED=False
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-  	# "netease.pipelines.JsonWithEncodingNeteasePipeline":300,
-   	'netease.pipelines.NeteasePipeline':300,
-   	}
+# ITEM_PIPELINES = {
+#   	# "netease.pipelines.JsonWithEncodingNeteasePipeline":300,
+#    	'netease.pipelines.NeteasePipeline':300,
+#    	}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
